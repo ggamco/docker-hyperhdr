@@ -3,7 +3,7 @@ FROM lsiobase/ubuntu:jammy
 ARG DEBIAN_FRONTEND="noninteractive"
 ARG HYPERHDR_URL="https://github.com/awawa-dev/HyperHDR/releases/download"
 ARG HYPERHDR_VERSION=
-ARG ARCH=
+ARG ARCH=x86_64
 
 RUN \
  echo "**** install packages ****" && \
