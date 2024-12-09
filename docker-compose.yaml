@@ -1,14 +1,14 @@
 version: '2'
 services:
   hyper-hdr:
-    container_name: hyper-hdr
-    hostname: hyper-hdr
-    image: nocturno/hyper-hdr:latest
+    container_name: hyperhdr
+    hostname: hyperhdr
+    image: ggamboa/hyperhdr:latest
     network_mode: host
     devices:
       - /dev/video0:/dev/video0
     environment:
-      - TZ=America/New_York
+      - TZ=Europe/Madrid
       - PGID=1000
       - PUID=1000
 
