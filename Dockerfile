@@ -20,7 +20,7 @@ RUN \
 	/var/tmp/*
 
 # add local files
-COPY root/ /
+COPY --chown=root:root --chmod=755 root/ /
 
 # ports and volumes
 EXPOSE 8090 8092 19400 19444 19445
