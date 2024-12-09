@@ -13,10 +13,10 @@ docker run -d \
 --device=/PATH TO YOUR VIDEO DEVICE usually /dev/video0:/dev/video0 \
 -e PUID=1000 \
 -e PGID=1000 \
--e TZ=America/New_York \
+-e TZ=Europe/Madrid \
 -v /LOCAL PATH ON YOUR COMPUTER:/config \
 --restart=unless-stopped \
-nocturno/hyper-hdr:latest
+ggamboa/hyperhdr:latest
 ```
 The device path should match your video input in this case is 0 or if you don't know your video device the easiest way is replace --device=/dev/video0 for --privileged (not recommended)
 
