@@ -34,7 +34,7 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
           build-args: |
-            HYPERHDR_VERSION=$DOCKER_METADATA_OUTPUT_VERSION
+            HYPERHDR_VERSION=${{ env.DOCKER_METADATA_OUTPUT_VERSION }}
           annotations: ${{ steps.meta.outputs.annotations }}
           provenance: true
           sbom: true
